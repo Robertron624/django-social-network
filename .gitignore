@@ -1,0 +1,26 @@
+# Ignore virtual environment
+.venv/
+
+# Ignore database file
+db.sqlite3
+
+# Ignore local settings (if any)
+myproject/myproject/settings/local.py
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore IDE and editor-specific files
+*.swp
+.vscode/
+.idea/
+
+# Ignore environment-specific files
+.env
+
+# Ignore any log files
+*.log
+
+# Ignore any compiled Python files
+*.pyc
