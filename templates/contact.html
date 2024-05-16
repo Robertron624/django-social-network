@@ -1,34 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-{% load static %}
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <main>
-        <h1>Contact</h1>
-        <p>This is the contact page of the website</p>
-        <div class="contact-list">
-            please contact us via:
-            <ul>
-                <li>Email:
-                    <a href="mailto:test@mail.com" target="_blank">
-                        Enterprise Email
-                    </a>
-                </li>
-                <li>Phone:
-                    <a href="tel:+1234567890" target="_blank">
-                        123-456-7890
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <p>
-            You can go to the <a href="/">home page</a>
-        </p>
-    </main>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block content %}
+<h1>Contact</h1>
+<p>This is the contact page of the website</p>
+<div class="contact-list">
+    please contact us via:
+    <ul>
+        <li>Email:
+            <a href="mailto:test@mail.com" target="_blank">
+                Enterprise Email
+            </a>
+        </li>
+        <li>Phone:
+            <a href="tel:+1234567890" target="_blank">
+                123-456-7890
+            </a>
+        </li>
+    </ul>
+</div>
+
+{% endblock %}

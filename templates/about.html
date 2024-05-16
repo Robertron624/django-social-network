@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <main>
-        <h1>About Us</h1>
-        <p>This is the about page of the website</p>
-        <p>
-            Or you can go back to the <a href="/">homepage</a>
-        </p>
-    </main>
-    <script
-        defer
-        src="{% static 'js/script.js' %}"
-    ></script>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block content %}
+<h1>About Us</h1>
+<p>This is the about page of the website</p>
+{% endblock %}
