@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts List</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <main>
+        <h1>
+            Posts List
+        </h1>
+        <p>
+            This is the list of posts
+        </p>
+        <div class="posts-list">
+            <ul>
+                {% for post in posts %}
+                    <li>
+                        <a href="/posts/{{ post.id }}">
+                            {{ post.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
