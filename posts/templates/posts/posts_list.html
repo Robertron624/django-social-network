@@ -1,21 +1,21 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-    Homepage
+    Posts
 {% endblock %}
 
 {% block content %}
     <h1>Posts List</h1>
     <p>This is the list of posts</p>
-    <div class="posts-list">
-        <ul>
+    <section class="posts-container">
+        <ul class="posts-list">
             {% for post in posts %}
-                <li>
-                    <a href="/posts/{{ post.id }}">
-                        {{ post.title }}
-                    </a>
-                </li>
+                <article>
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.body }}</p>
+                    <p class="post-date">Published on: {{ post.date }}</p>
+                </article>
             {% endfor %}
         </ul>
-    </div>
-{% endblock %}
+    </section>
+{% endblock %}  
